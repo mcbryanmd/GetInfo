@@ -1,4 +1,4 @@
-function Retriever(){
+function Retriever(window, document, undefined){
 	String.prototype.cap = function(){return this.charAt(0).toUpperCase()+this.slice(1);};
 	var base = {
 		title : "\u22D8GET: INFO\u22D9",
@@ -98,7 +98,7 @@ function Retriever(){
 								<td class='fl' id='ctd'>
 									<select id='ss'>
 										<option value=''>Choose Type</option>
-										" + base.profiles.options.join(' ')+"
+										" + base.profiles.options.join(' ') + "
 									</select>
 								</td>
 								<td id='sctd'><input id='sct' type='text' size='25' value='Search Tags'></td>
