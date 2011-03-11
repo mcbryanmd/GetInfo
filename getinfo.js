@@ -3,7 +3,7 @@ function Retriever(window, document, undefined){
 	var base = {
 		title : "\u22D8GET: INFO\u22D9",
 		version : "Version: 2.00 (03/10/2011)",
-		master : "http://github.com/immabear/GetInfo/raw/master/",
+		master : "http://github.com/mcbryanmd/GetInfo/raw/master/",
 		profiles : {
 			files : ["stagevu.js","btjunkie.js","nyaatorrents.js","debug.js"],
 			tags : [],
