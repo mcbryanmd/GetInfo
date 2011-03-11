@@ -31,7 +31,7 @@ function Retriever(){
 		base.profiles.fcase[t] = ((t == 0) ? "default" : "case \"" + client + "\"") + ": fetch" + clientfn + "; break;";
 		base.profiles.options[t] = "<option value=\"" + client + "\">" + client.cap() + ":</option>";
 	}
-	for(var t=0;t<Db.length;t++){
+	for(var t=0;t<base.js.files.length;t++){
 		base.js.tags[t]= "<script src=\"" + base.master + base.js.files[t] + "\"></script>";
 	}
 	var t = -1;
