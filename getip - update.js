@@ -98,7 +98,7 @@ function Retriever(){
 								<td class='fl' id='ctd'>
 									<select id='ss'>
 										<option value=''>Choose Type</option>
-										"+base.profiles.tagsC.join(' ')+"
+										" + base.profiles.options.join(' ')+"
 									</select>
 								</td>
 								<td id='sctd'><input id='sct' type='text' size='25' value='Search Tags'></td>
