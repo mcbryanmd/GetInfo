@@ -1,7 +1,7 @@
 function Retriever(){
 	String.prototype.cap = function(){return this.charAt(0).toUpperCase()+this.slice(1);};
 	var base = {
-		title : "\u22D8GET: INFO\u22D9 by IMMABEAR",
+		title : "\u22D8GET: INFO\u22D9",
 		version : "Version: 2.00 (03/10/2011)",
 		master : "http://github.com/immabear/GetInfo/raw/master/",
 		profiles : {
@@ -37,7 +37,7 @@ function Retriever(){
 	var t = -1;
 	for (key in base.css.files) {
 		if(base.css.files.hasOwnProperty(key)) {
-			base.css.tags[t++] = "<link rel=\"" + key "\" href=\"" + base.master + base.css.files[key] + "\"/>";
+			base.css.tags[t++] = "<link rel=\"" + key + "\" href=\"" + base.master + base.css.files[key] + "\"/>";
 		}
 	}
 	var page="
