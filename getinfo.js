@@ -4,15 +4,8 @@ function Retriever(window, document, undefined){
 		title : "\u22D8GET: INFO\u22D9",
 		version : "Version: 2.00 (03/10/2011)",
 		master : "http://github.com/mcbryanmd/GetInfo/raw/master/",
-		profiles : {
-			files : ["stagevu.js","btjunkie.js","nyaatorrents.js","debug.js"],
-			tags : [],
-			pcase : [],
-			fcase : [],
-			options : []
-		},
 		js : {
-			files : ["jquery.tools.min.js","jquery.xdomainajax.js","tasks.js","default.js"],
+			files : ["jquery.getinfo.js"],
 			tags : []
 		},
 		css : {
@@ -23,14 +16,7 @@ function Retriever(window, document, undefined){
 			tags : []
 		}
 	};
-	for(var t=0;t<base.profiles.files.length;t++){
-		var client = base.profiles.files[t],
-			clientfn = '("sb",CsU[' + t + '].replace("|",tags)+"&rrr="+Math.random(),"' + client + '",base.profiles.tags[' + t + '],CsX[' + t + '])';
-		base.profiles.tags[t] = "<script src=\""+base.master+client+"\"></script>";
-		base.profiles.pcase[t] = "case \""+client+"\": parse"+client+"(id,data.responseText); break;";
-		base.profiles.fcase[t] = ((t == 0) ? "default" : "case \"" + client + "\"") + ": fetch" + clientfn + "; break;";
-		base.profiles.options[t] = "<option value=\"" + client + "\">" + client.cap() + ":</option>";
-	}
+	/*clientfn = '("sb",CsU[' + t + '].replace("|",tags)+"&rrr="+Math.random(),"' + client + '",base.profiles.tags[' + t + '],CsX[' + t + '])';*/
 	for(var t=0;t<base.js.files.length;t++){
 		base.js.tags[t]= "<script src=\"" + base.master + base.js.files[t] + "\"></script>";
 	}
